@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Tư Vấn Của Tôi</title>
+    <style>
+        /* Một chút CSS để trang web trông dễ nhìn hơn */
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding-top: 50px; background-color: #f4f4f9; }
+        .form-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px; }
+        h2 { color: #333; text-align: center; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Đăng Ký Tư Vấn</h2>
+    <form action="https://formspree.io/f/xdayqwql" method="POST">
+        <label>Tên của bạn:</label>
+        <input type="text" name="name" placeholder="Nguyễn Văn A" required>
+
+        <label>Số điện thoại:</label>
+        <input type="tel" name="phone" placeholder="090..." required>
+
+        <label>Nội dung cần tư vấn:</label>
+        <textarea name="message" rows="4" placeholder="Tôi muốn hỏi về..."></textarea>
+
+        <button type="submit">Gửi yêu cầu</button>
+    </form>
+</div>
+
+</body>
+</html>
